@@ -6,20 +6,21 @@ import JsonView from '@uiw/react-json-view';
 interface ResponseData {
   success: boolean;
   data: {
-    title: string;
-    slug: string;
-    description: string;
-    difficulty: string;
-    tags: string[];
-    constraints: string;
-    askedByCompanies: string[];
-    isLocked: boolean;
-    isPublished: boolean;
-    isFeatured: boolean;
-    solutionVideoUrl: string;
-    editorialNotes: string;
+    title?: string;
+    slug?: string;
+    description?: string;
+    difficulty?: string;
+    tags?: string[];
+    constraints?: string;
+    askedByCompanies?: string[];
+    isLocked?: boolean;
+    isPublished?: boolean;
+    isFeatured?: boolean;
+    solutionVideoUrl?: string;
+    editorialNotes?: string;
+    codingProblemTestCases?: unknown[];
     // ... and many more fields
-    [key: string]: any;
+    [key: string]: unknown;
   };
 }
 
